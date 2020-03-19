@@ -9,7 +9,7 @@ const links = [
   {
     title: 'CDC Coronavirus information',
     href: 'https://www.cdc.gov/coronavirus/2019-ncov/index.html',
-  }
+  },
 ];
 
 // shouldOpenNewTabs: true if outbound links should open in a new tab

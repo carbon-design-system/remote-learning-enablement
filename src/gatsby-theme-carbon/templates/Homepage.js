@@ -9,7 +9,9 @@ const FirstLeftText = () => <p>Your health first</p>;
 
 const FirstRightText = () => (
   <p>
-    The health of IBMers continues to be our first priority as the IBM Crisis Management Teams and Corporate Health & Safety actively monitor the Novel Coronavirus (COVID-19) disease outbreak. 
+    The health of IBMers continues to be our first priority as the IBM Crisis
+    Management Teams and Corporate Health & Safety actively monitor the Novel
+    Coronavirus (COVID-19) disease outbreak.
   </p>
 );
 
@@ -17,7 +19,8 @@ const SecondLeftText = () => <p>Stay informed</p>;
 
 const SecondRightText = () => (
   <p>
-    We encourage you to stay healthy and keep informed of IBM recommendations through w3 and through your local health authorities.
+    We encourage you to stay healthy and keep informed of IBM recommendations
+    through w3 and through your local health authorities.
   </p>
 );
 
