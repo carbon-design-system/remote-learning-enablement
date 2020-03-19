@@ -1,0 +1,23 @@
+- title: Getting started
+  pages:
+    - path: /getting-started
+- title: Tools and resources
+  pages:
+    - path: /tools-and-resources
+- title: Tips for teachers
+  pages:
+    - title: Promoting interaction
+      path: /tips-for-teachers/promoting-interaction
+    - title: Keeping students engaged
+      path: /tips-for-teachers/keeping-students-engaged
+    - title: Making it fun
+      path: /tips-for-teachers/making-it-fun
+- title: For parents or guardians
+  pages:
+    - path: /for-parents-or-guardians
+- title: For administrators
+  pages:
+    - path: /for-administrators
+- title: For students
+  pages:
+    - path: /for-students
