@@ -3,7 +3,7 @@ module.exports = {
     title: "Remote learning enablement",
     description:
       "A New Challenge for Teachers & Students. IBM has experience that can help",
-    keywords: "remote,learning,enablement, ibm"
+    keywords: "remote,learning,enablement,ibm"
   },
   pathPrefix: `/gtc`,
   plugins: [
