@@ -1,0 +1,20 @@
+.title-with-text {
+  padding-top: 2rem;
+}
+
+.title-with-text:before {
+  content: "";
+  display: block;
+  background: $ui-04;
+  height: 1px;
+  width: calc(100% - 2rem);
+  margin: -$spacing-07 0 0 $spacing-05;
+}
+
+.title-with-text:first-child:before {
+  display: none;
+}
+
+.title-with-text h2 {
+  margin-top: 0;
+}
