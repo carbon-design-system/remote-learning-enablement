@@ -1,19 +1,13 @@
-import React from 'react';
-import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon';
-import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage';
+import React from "react";
+import { HomepageBanner, HomepageCallout } from "gatsby-theme-carbon";
+import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
 // import { calloutLink } from './Homepage.module.scss';
 
-import Remote from '../../images/remote.jpg';
+import Remote from "../../images/remote.jpg";
 
-const FirstLeftText = () => <p>Remote learning with IBM</p>;
+const FirstLeftText = () => <p>A New Challenge for Teachers & Students.</p>;
 
-const FirstRightText = () => (
-  <p>
-    The health of IBMers continues to be our first priority as the IBM Crisis
-    Management Teams and Corporate Health & Safety actively monitor the Novel
-    Coronavirus (COVID-19) disease outbreak.
-  </p>
-);
+const FirstRightText = () => <p>IBM has experience that can help.</p>;
 
 const SecondLeftText = () => <p>Stay informed</p>;
 
@@ -24,7 +18,7 @@ const SecondRightText = () => (
   </p>
 );
 
-const BannerText = () => '';
+const BannerText = () => "";
 
 const customProps = {
   Banner: <HomepageBanner renderText={BannerText} image={Remote} />,
@@ -43,7 +37,7 @@ const customProps = {
       color="white"
       backgroundColor="#061f80"
     />
-  ),
+  )
 };
 
 // spreading the original props gives us props.children (mdx content)
