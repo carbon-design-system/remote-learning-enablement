@@ -3,9 +3,9 @@ import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon';
 import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage';
 // import { calloutLink } from './Homepage.module.scss';
 
-import Carbon from '../../images/carbon.jpg';
+import Remote from '../../images/remote.jpg';
 
-const FirstLeftText = () => <p>Your health first</p>;
+const FirstLeftText = () => <p>Remote learning with IBM</p>;
 
 const FirstRightText = () => (
   <p>
@@ -24,10 +24,10 @@ const SecondRightText = () => (
   </p>
 );
 
-const BannerText = () => <h1>Remote learning enablement with IBM</h1>;
+const BannerText = () => '';
 
 const customProps = {
-  Banner: <HomepageBanner renderText={BannerText} image={Carbon} />,
+  Banner: <HomepageBanner renderText={BannerText} image={Remote} />,
   FirstCallout: (
     <HomepageCallout
       backgroundColor="#030303"
