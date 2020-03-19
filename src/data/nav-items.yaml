@@ -3,6 +3,8 @@
     - path: /getting-started
 - title: Tools and resources
   pages:
+    - title: Overview
+      path: /tools-and-resources/overview
     - title: Classroom & parent conferences
       path: /tools-and-resources/classroom-and-parent-conferences
     - title: Lectures & assembiles
@@ -13,6 +15,8 @@
       path: /tools-and-resources/ibm-resources
 - title: Tips for teachers
   pages:
+    - title: Overview
+      path: /tips-for-teachers/overview
     - title: Promoting interaction
       path: /tips-for-teachers/promoting-interaction
     - title: Keeping students engaged
