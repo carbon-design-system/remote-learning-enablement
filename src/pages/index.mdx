@@ -1,4 +1,5 @@
 import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
+import HomepageNavTile from "../components/HomepageNavTile"
 export default HomepageTemplate;
 
 <iframe
@@ -12,19 +13,36 @@ export default HomepageTemplate;
   style="border: 0 none transparent;"
 ></iframe>
 
-<<<<<<< Tiles >>>>>>>
-
 <Row className="resource-card-group">
-<Column colMd={4} colLg={4} noGutterSm>
-  <ResourceCard
-    title="Tools and resources"
-    href="/tools-and-resources/overview"
-    color="teal"
-    actionIcon="arrowRight"
-  >
-
-  </ResourceCard>
-</Column>
+  <HomepageNavTile 
+    title="Tools and resources" 
+    href="/tips-for-teachers/overview" 
+    color="teal" 
+  />
+  <HomepageNavTile 
+    title="Teachers" 
+    subTitle="Tips for" 
+    href="/tips-for-teachers/overview" 
+    color="dark" 
+  />
+  <HomepageNavTile 
+    title="Parents and guardians" 
+    subTitle="Tips for" 
+    href="/for-parents-or-guardians" 
+    color="dark" 
+  />
+  <HomepageNavTile 
+    title="Students" 
+    subTitle="Tips for" 
+    href="/tips-for-teachers/overview" 
+    color="dark" 
+  />
+  <HomepageNavTile 
+    title="Students" 
+    subTitle="Tips for" 
+    href="/for-administrators" 
+    color="dark" 
+  />
 </Row>
 
 <Row>

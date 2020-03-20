@@ -6,7 +6,11 @@ import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage';
 import Remote from '../../images/remote.jpg';
 
 const FirstLeftText = () => (
-  <p>Technology to help teachers, students and parents</p>
+  <p>
+    Technology to help
+    <br /> teachers, students <br />
+    and parents
+  </p>
 );
 
 const FirstRightText = () => (
