@@ -1,5 +1,5 @@
 import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
-import HomepageNavTile from "../components/HomepageNavTile"
+import HomepageTile from "../components/HomepageTile"
 export default HomepageTemplate;
 
 <iframe
@@ -13,36 +13,56 @@ export default HomepageTemplate;
   style="border: 0 none transparent;"
 ></iframe>
 
-<Row className="resource-card-group">
-  <HomepageNavTile 
-    title="Tools and resources" 
-    href="/tips-for-teachers/overview" 
-    color="teal" 
-  />
-  <HomepageNavTile 
-    title="Teachers" 
-    subTitle="Tips for" 
-    href="/tips-for-teachers/overview" 
-    color="dark" 
-  />
-  <HomepageNavTile 
-    title="Parents and guardians" 
-    subTitle="Tips for" 
-    href="/for-parents-or-guardians" 
-    color="dark" 
-  />
-  <HomepageNavTile 
-    title="Students" 
-    subTitle="Tips for" 
-    href="/tips-for-teachers/overview" 
-    color="dark" 
-  />
-  <HomepageNavTile 
-    title="Students" 
-    subTitle="Tips for" 
-    href="/for-administrators" 
-    color="dark" 
-  />
+<Row className="homepage-row">
+<Column colLg={4} colMd={4} offsetMd={4} noGutterSm>
+    <HomepageTile
+      ratio="2:1"
+      theme="dark"
+      title="Tools and resources"
+      actionIcon="arrowRight"
+      link="/tips-for-teachers/overview"
+    />
+</Column>
+<Column colLg={4} colMd={4} noGutterSm>
+    <HomepageTile
+      ratio={{ default: '2:1', md: '1:1', }}
+      theme="dark"
+      subtitle="Tips for"
+      title="Teachers"
+      identityIcon="images/SketchIcon.svg"
+      link="/tips-for-teachers/overview"
+    />
+</Column>
+<Column colLg={4} colMd={4} noGutterSm>
+    <HomepageTile
+      ratio={{ default: '2:1', md: '1:1', }}
+      theme="dark"
+      subtitle="Tips for"
+      title="Parents and guardians"
+      identityIcon="images/SketchIcon.svg"
+      link="/for-parents-or-guardians"
+    />
+</Column>
+<Column colLg={4} colMd={4} noGutterSm>
+    <HomepageTile
+      ratio={{ default: '2:1', md: '1:1', }}
+      theme="dark"
+      subtitle="Tips for"
+      title="Students"
+      identityIcon="images/SketchIcon.svg"
+      link="/for-students"
+    />
+</Column>
+<Column colLg={4} colMd={4} noGutterSm>
+    <HomepageTile
+      ratio={{ default: '2:1', md: '1:1', }}
+      theme="dark"
+      subtitle="Tips for"
+      title="Administrators"
+      identityIcon="images/SketchIcon.svg"
+      link="/for-administrators"
+    />
+</Column>
 </Row>
 
 <Row>
