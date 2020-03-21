@@ -1,7 +1,12 @@
 import React, { useLayoutEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { settings } from 'carbon-components';
-import { Launch20, ArrowRight20, Error20 } from '@carbon/icons-react';
+import {
+  Launch20,
+  ArrowRight24,
+  Error20,
+  Download20,
+} from '@carbon/icons-react';
 import { baseFontSize, breakpoints as carbonBreakpoints } from '@carbon/layout';
 
 const { prefix } = settings;
@@ -29,6 +34,8 @@ const HomepageTile = ({
   actionIcon,
   link,
   target,
+  animation,
+  hoverColor,
   children,
 }) => {
   const [width, setWidth] = useState(
@@ -73,6 +80,8 @@ const HomepageTile = ({
         return '25%';
       case '6:1':
         return windowWidth > 1056 ? '16.67%' : '25%';
+      case '1:1.5':
+        return '150%';
       case '1:2':
         return '200%';
       case '3:1':
@@ -101,16 +110,18 @@ const HomepageTile = ({
 
   const getActionIcon = type => {
     switch (type) {
-      case 'resources':
+      case 'launch':
         return <Launch20 aria-label="Open resource" />;
       case 'disabled':
         return <Error20 aria-label="disabled" />;
       case 'article':
-        return <ArrowRight20 aria-label="Go to content" />;
+        return <ArrowRight24 aria-label="Go to content" />;
+      case 'download':
+        return <Download20 aria-label="Download content" />;
       case 'no-icon':
         return null;
       default:
-        return <ArrowRight20 aria-label="Go to content" />;
+        return <ArrowRight24 aria-label="Go to content" />;
     }
   };
 
@@ -128,19 +139,29 @@ const HomepageTile = ({
     backgroundImage: transparentImage ? `url(${transparentImage})` : null,
   };
 
-  return (
-    showTile && (
-      <>
-        {children ? (
+  const themeColor = type => {
+    switch (type) {
+      case 'teal':
+        return `${prefix}--homepage-idl-tile ${prefix}--homepage-idl-tile__teal`;
+      case 'dark':
+        return `${prefix}--homepage-idl-tile ${prefix}--homepage-idl-tile__dark`;
+      case 'white':
+        return `${prefix}--homepage-idl-tile ${prefix}--homepage-idl-tile__white`;
+      default:
+        return `${prefix}--homepage-idl-tile`;
+    }
+  };
+
+  const animationStyle = type => {
+    switch (type) {
+      default:
+        return (
           <div
-            className={
-              theme === 'dark'
-                ? `${prefix}--homepage-idl-tile ${prefix}--homepage-idl-tile__dark`
-                : `${prefix}--homepage-idl-tile`
-            }
+            className={themeColor(theme)}
             style={ratioStyle}
             href={link}
-            target={target}>
+            target={target}
+          >
             <div
               className={`${prefix}--homepage-idl-tile-background`}
               style={backgroundStyle}
@@ -149,22 +170,33 @@ const HomepageTile = ({
               {children}
             </div>
           </div>
+        );
+    }
+  };
+
+  const backgroundHover = {
+    backgroundColor: hoverColor || null,
+  };
+
+  return (
+    showTile && (
+      <>
+        {children ? (
+          <div>{animationStyle(animation)}</div>
         ) : (
           <a
-            className={
-              theme === 'dark'
-                ? `${prefix}--homepage-idl-tile ${prefix}--homepage-idl-tile__dark`
-                : `${prefix}--homepage-idl-tile`
-            }
+            className={themeColor(theme)}
             style={ratioStyle}
             href={link}
-            target={target}>
+            target={target}
+          >
             <div
               className={
                 hoverDark
                   ? `${prefix}--homepage-idl-tile-hover ${prefix}--homepage-idl-tile-hover__dark`
                   : `${prefix}--homepage-idl-tile-hover`
               }
+              style={backgroundHover}
             />
             <div
               className={`${prefix}--homepage-idl-tile-background`}
@@ -176,15 +208,17 @@ const HomepageTile = ({
                   ? `${prefix}--homepage-idl-tile-content ${prefix}--homepage-idl-tile-content-on-hover-only`
                   : `${prefix}--homepage-idl-tile-content`
               }
-              style={transparentImageStyle}>
+              style={transparentImageStyle}
+            >
               <div
                 className={
                   disabled
                     ? `${prefix}--homepage-idl-tile-title ${prefix}--homepage-idl-tile-title--disabled`
                     : `${prefix}--homepage-idl-tile-title`
-                }>
+                }
+              >
                 <div className={`${prefix}--type-body-long-01`}>{subtitle}</div>
-                <div className={`${prefix}--image-card__title`}>
+                <div className={`${prefix}--type-expressive-heading-03`}>
                   {title}
                 </div>
               </div>
@@ -199,7 +233,8 @@ const HomepageTile = ({
                     ? `${prefix}--homepage-idl-tile-action-icon ${prefix}--homepage-idl-tile-action-icon--disabled`
                     : `${prefix}--homepage-idl-tile-action-icon`
                 }
-                style={{ fill: theme === 'dark' ? '#ffffff' : '#282828' }}>
+                style={{ fill: theme === 'dark' ? '#ffffff' : '#282828' }}
+              >
                 {getActionIcon(actionIcon)}
               </div>
             </div>
@@ -227,6 +262,8 @@ HomepageTile.propTypes = {
   marginTop: PropTypes.string,
   children: PropTypes.node,
   disabled: PropTypes.bool,
+  animation: PropTypes.string,
+  hoverColor: PropTypes.string,
 };
 
 export default HomepageTile;

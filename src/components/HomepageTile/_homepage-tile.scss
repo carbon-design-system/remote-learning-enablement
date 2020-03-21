@@ -1,4 +1,5 @@
-.container--homepage {
+.container--homepage,
+.container {
   a:hover {
     text-decoration: none;
   }
@@ -72,7 +73,6 @@
       right: 1px;
       bottom: 1px;
       z-index: 2;
-      background: rgba(255, 255, 255, 0.08);
       opacity: 0;
       transition: opacity 600ms ease;
       &.#{$prefix}--homepage-idl-tile-hover__dark {
@@ -111,6 +111,30 @@
       }
     }
 
+    &.#{$prefix}--homepage-idl-tile__teal {
+      color: $carbon--white-0;
+
+      .#{$prefix}--homepage-idl-tile-background {
+        background-color: $carbon--teal-70;
+      }
+
+      .#{$prefix}--homepage-idl-tile-action-icon {
+        fill: $carbon--white-0 !important;
+      }
+    }
+
+    &.#{$prefix}--homepage-idl-tile__white {
+      color: $carbon--gray-100;
+
+      .#{$prefix}--homepage-idl-tile-background {
+        background-color: $carbon--gray-10;
+      }
+
+      .#{$prefix}--homepage-idl-tile-action-icon {
+        fill: $carbon--gray-100;
+      }
+    }
+
     .#{$prefix}--homepage-idl-tile-nested-content {
       position: absolute;
       overflow: hidden;
@@ -135,8 +159,58 @@
     .#{$prefix}--homepage-idl-tile {
       .#{$prefix}--homepage-idl-tile-nested-content {
         .#{$prefix}--homepage-idl-tile {
-          @include carbon--breakpoint('lg') {
+          @include carbon--breakpoint("sm") {
+            width: calc((100%) + 1px);
+          }
+          @include carbon--breakpoint("md") {
+            width: calc((50%) + 1px);
+          }
+          @include carbon--breakpoint("lg") {
             width: calc((100% / 3) + 1px);
+          }
+        }
+      }
+    }
+  }
+  // 1:1 tile's nested card get's full width on mobile
+  .#{$prefix}--col-lg-8 {
+    .#{$prefix}--homepage-idl-tile {
+      .#{$prefix}--homepage-idl-tile-nested-content {
+        .#{$prefix}--homepage-idl-tile {
+          @include carbon--breakpoint("sm") {
+            width: calc((50%) + 1px);
+          }
+          @include carbon--breakpoint("md") {
+            width: calc((75%) + 1px);
+          }
+          @include carbon--breakpoint("lg") {
+            width: calc((100% / 2) + 1px);
+          }
+        }
+      }
+    }
+  }
+  // 1:1.5 tile's nested tile gets full width all screen sizes
+  .#{$prefix}--col-lg-4 {
+    .#{$prefix}--homepage-idl-tile {
+      .#{$prefix}--homepage-idl-tile-nested-content {
+        .#{$prefix}--homepage-idl-tile {
+          @include carbon--breakpoint("sm") {
+            width: calc((100%) + 1px);
+          }
+        }
+      }
+    }
+  }
+  .#{$prefix}--col-lg-6 {
+    .#{$prefix}--homepage-idl-tile {
+      .#{$prefix}--homepage-idl-tile-nested-content {
+        .#{$prefix}--homepage-idl-tile {
+          @include carbon--breakpoint("sm") {
+            width: calc((50%) + 1px);
+          }
+          @include carbon--breakpoint("md") {
+            width: calc((66%) + 1px);
           }
         }
       }
