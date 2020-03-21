@@ -14,13 +14,15 @@ export default HomepageTemplate;
 ></iframe>
 
 <Row className="homepage-row">
-<Column colLg={4} colMd={4} offsetMd={4} noGutterSm>
+<Column colMd={4} offsetMd={4} colLg={4} offsetLg={8} noGutterSm>
     <HomepageTile
       ratio="2:1"
-      theme="dark"
+      theme="teal"
       title="Tools and resources"
       actionIcon="arrowRight"
       link="/tips-for-teachers/overview"
+      hoverColor="#004144"
+      iconColor="light"
     />
 </Column>
 <Column colLg={4} colMd={4} noGutterSm>
@@ -29,8 +31,9 @@ export default HomepageTemplate;
       theme="dark"
       subtitle="Tips for"
       title="Teachers"
-      identityIcon="images/SketchIcon.svg"
+      identityIcon="pictograms/apple.svg"
       link="/tips-for-teachers/overview"
+      hoverColor="#393939"
     />
 </Column>
 <Column colLg={4} colMd={4} noGutterSm>
@@ -39,18 +42,22 @@ export default HomepageTemplate;
       theme="dark"
       subtitle="Tips for"
       title="Parents and guardians"
-      identityIcon="images/SketchIcon.svg"
+      identityIcon="pictograms/high--five.svg"
       link="/for-parents-or-guardians"
+      hoverColor="#393939"
     />
 </Column>
-<Column colLg={4} colMd={4} noGutterSm>
+</Row>
+<div className="bx--row" style={{ marginTop: "0" }}>
+<Column colMd={4} colLg={4} offsetLg={0} noGutterSm>
     <HomepageTile
       ratio={{ default: '2:1', md: '1:1', }}
       theme="dark"
       subtitle="Tips for"
       title="Students"
-      identityIcon="images/SketchIcon.svg"
+      identityIcon="pictograms/education.svg"
       link="/for-students"
+      hoverColor="#393939"
     />
 </Column>
 <Column colLg={4} colMd={4} noGutterSm>
@@ -59,11 +66,12 @@ export default HomepageTemplate;
       theme="dark"
       subtitle="Tips for"
       title="Administrators"
-      identityIcon="images/SketchIcon.svg"
+      identityIcon="pictograms/college.svg"
       link="/for-administrators"
+      hoverColor="#393939"
     />
 </Column>
-</Row>
+</div>
 
 <Row>
 <Column colLg={4}>
