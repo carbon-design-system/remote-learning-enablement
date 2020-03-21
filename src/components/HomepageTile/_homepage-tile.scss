@@ -76,7 +76,7 @@
       opacity: 0;
       transition: opacity 600ms ease;
       &.#{$prefix}--homepage-idl-tile-hover__dark {
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.15);
       }
     }
 
