@@ -1,6 +1,3 @@
-- title: Getting started
-  pages:
-    - path: /getting-started
 - title: Tools and resources
   pages:
     - title: Overview
@@ -23,12 +20,11 @@
       path: /tips-for-teachers/keeping-students-engaged
     - title: Making it fun
       path: /tips-for-teachers/making-it-fun
-- title: For parents or guardians
+    - title: Customizable certificates
+      path: /tips-for-teachers/customizable-certificates
+- title: For leaders
   pages:
-    - path: /for-parents-or-guardians
-- title: For administrators
+    - path: /for-leaders
+- title: For parents & guardians
   pages:
-    - path: /for-administrators
-- title: For students
-  pages:
-    - path: /for-students
+    - path: /for-parents-and-guardians
