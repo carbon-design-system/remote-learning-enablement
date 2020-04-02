@@ -2,17 +2,6 @@ import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
 import HomepageTile from "../components/HomepageTile"
 export default HomepageTemplate;
 
-<iframe
-  width="480"
-  height="270"
-  src="https://ustream.tv/embed/recorded/120734197"
-  scrolling="no"
-  allowfullscreen
-  webkitallowfullscreen
-  frameborder="0"
-  style="border: 0 none transparent;"
-></iframe>
-
 <Row className="homepage-row">
 <Column colMd={4} offsetMd={4} colLg={4} offsetLg={8} noGutterSm>
     <HomepageTile
@@ -23,15 +12,16 @@ export default HomepageTemplate;
       link="/tips-for-teachers/overview"
       hoverColor="#004144"
       iconColor="light"
+      marginTop="1rem"
     />
 </Column>
 <Column colLg={4} colMd={4} noGutterSm>
     <HomepageTile
       ratio={{ default: '2:1', md: '1:1', }}
       theme="dark"
-      subtitle="Tips for"
-      title="Teachers"
-      identityIcon="pictograms/apple.svg"
+      subtitle="Share and replay large lectures and video content."
+      title="IBM Watson Media"
+      identityIcon="pictograms/watson--avatar.svg"
       link="/tips-for-teachers/overview"
       hoverColor="#393939"
     />
@@ -40,9 +30,9 @@ export default HomepageTemplate;
     <HomepageTile
       ratio={{ default: '2:1', md: '1:1', }}
       theme="dark"
-      subtitle="Tips for"
-      title="Parents and guardians"
-      identityIcon="pictograms/high--five.svg"
+      subtitle="Best for small virtual classroom meetups and parent conferences."
+      title="Cisco Webex Meetings"
+      identityIcon="pictograms/desktop.svg"
       link="/for-parents-or-guardians"
       hoverColor="#393939"
     />
@@ -53,9 +43,9 @@ export default HomepageTemplate;
     <HomepageTile
       ratio={{ default: '2:1', md: '1:1', }}
       theme="dark"
-      subtitle="Tips for"
-      title="Students"
-      identityIcon="pictograms/education.svg"
+      subtitle="Message with larger groups of students in realtime."
+      title="Cisco Webex Teams"
+      identityIcon="pictograms/group.svg"
       link="/for-students"
       hoverColor="#393939"
     />
@@ -64,32 +54,22 @@ export default HomepageTemplate;
     <HomepageTile
       ratio={{ default: '2:1', md: '1:1', }}
       theme="dark"
-      subtitle="Tips for"
-      title="Administrators"
-      identityIcon="pictograms/college.svg"
+      subtitle="Learn how these free tools and courses may help your class. "
+      title="Free IBM Resources"
+      identityIcon="pictograms/bee.svg"
       link="/for-administrators"
       hoverColor="#393939"
     />
 </Column>
 </div>
 
-<Row>
-<Column colLg={4}>
-
-<h2 className='section-header-h2'>Why IBM?</h2>
-
-</Column>
-<Column colLg={8}>
-
-IBM has heavily invested and modernized its infrastructure, applications, and ways of working to support a globally distributed workforce. We have learned through experience and experimentation how best to equip our people with collaboration tools and techniques to ensure that so that remote workers are not disadvantaged. Many of the lessons we have learned and techniques we have mastered can help you to achieve the most engaging and effective environment possible short of being in the same room together.
-
-Some of what we have to share is about technology - how teachers and students can actually connect with each other - but others are about people - their needs, concerns and behavior. We have spent years delivering global video conferencing capabilities to all IBMers around the globe, and invested in training how to have effective virtual meetings - for example, we have invested in training employees to understand body language on video conferences, and that more than half of communication is visual not verbal.
-
-</Column>
-</Row>
-
 <div className="bx--row homepage-quote-row">
-<div className="bx--col-lg-8 bx--offset-lg-4 homepage-quote-column">
+<div className="bx--col-lg-4">
+
+![placeholder](https://via.placeholder.com/150)
+
+</div>
+<div className="bx--col-lg-8 homepage-quote-column">
 
 <div className="bx--type-serif homepage-quote">“IBM has made strategic investments to modernize our infrastructure, applications, ways of working/tooling, and remote work etiquette; on any given day hundreds of thousands of IBMers are successfully working remotely around the globe. We’ve learned a lot, and would like to share it with you.”</div>
 
@@ -102,13 +82,18 @@ Some of what we have to share is about technology - how teachers and students ca
 </div>
 
 <Row>
-<Column colLg={8} offsetLg={4}>
+<Column colLg={4}>
 
-We know that being physically or geographically separated from each other presents a different set of challenges than are faced in a traditional classroom - from privacy to social etiquette while on a video conference. How do you deal with background noise? How does a student indicate that they want to speak or ask a question? How do you use online chat capabilities as part of the experience?
+<h2 className='section-header-h2'>Why IBM?</h2>
 
-These pages will provide our best practices and recommendations for getting the most out of interacting remotely - whether a teacher is connecting with a class and sharing lecture materials or a school-wide assembly is being held virtually.
+</Column>
+<Column colLg={8}>
 
-We believe that beyond attending to the educational needs of students, there is value in connecting "face to face" even when that connection is virtual. We have seen the impact of this technology on remote teams that develop a greater sense of engagement and psychological safety and we believe this approach will help ease the fears and stresses impacting students, teachers and parents today.
+Every day, IBM delivers the best online meeting tools to enable our employees around the world to collaborate effectively. We also have a proud history of working with thousands of educators globally through initiatives such as the P-TECH School Model.
+
+During these unprecedented times, educators are turning to innovative solutions to help students keep learning. The technologies and resources contained on these pages highlight IBM’s best practices and recommendations for engaging students remotely.
+
+Learn more about IBM’s response to COVID-19.
 
 </Column>
 </Row>

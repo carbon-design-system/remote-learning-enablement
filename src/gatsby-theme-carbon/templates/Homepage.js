@@ -7,39 +7,30 @@ import Remote from '../../images/remote.jpg';
 
 const FirstLeftText = () => (
   <p>
-    Technology to help
-    <br /> teachers, students <br />
-    and parents
+    Technology and educational content to help teachers, students and parents
+    stay connected and engaged
   </p>
 );
 
 const FirstRightText = () => (
   <>
     <p>
-      On any given day, over 200K IBMers around the globe are working together
-      to run the world's most critical infrastructure. As we collectively
-      navigate the current crisis, we want to share our expertise and help
-      educators and children continue their learning.{' '}
+      Almost a billion children have seen their schools close as a result of
+      COVID-19. As educators and parents look for solutions to keep children
+      engaged and learning during these uncertain times, IBM is here to offer
+      guidance.{' '}
     </p>
     <br />
     <p>
-      Each of us is facing new challenges in how we work and live, and we
-      understand that many teachers and students will need to adapt to overcome
-      these challenges. Though business and educational contexts differ on many
-      dimensions, we believe we can provide some guidance in navigating some of
-      the challenges students and teachers will encounter during this period.
+      Support includes tools and resources to help make remote learning
+      effective and guidance for your role in the school community.
     </p>
   </>
 );
 
-const SecondLeftText = () => <p>Stay informed</p>;
+const SecondLeftText = () => <p></p>;
 
-const SecondRightText = () => (
-  <p>
-    We encourage you to stay healthy and keep informed of IBM recommendations
-    through w3 and through your local health authorities.
-  </p>
-);
+const SecondRightText = () => <p></p>;
 
 const BannerText = () => '';
 
