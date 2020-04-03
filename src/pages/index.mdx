@@ -2,8 +2,30 @@ import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
 import HomepageTile from "../components/HomepageTile"
 export default HomepageTemplate;
 
-<div className="bx--row reverse-row" style={{ marginTop: "0" }}>
-<Column colMd={4} colLg={4} noGutterSm  className="first-card">
+<Row className="image-card-group" style={{ marginTop: "0" }}>
+<Column colLg={4} colMd={4} noGutterSm>
+    <HomepageTile
+      ratio={{ default: '2:1', md: '1:1', }}
+      theme="dark"
+      subtitle="Share and replay large lectures and video content."
+      title="IBM Watson Media"
+      identityIcon="pictograms/watson--avatar.svg"
+      link="http://watson.media.ibm.com/platinum_free_trial.html"
+      hoverColor="#393939"
+    />
+</Column>
+<Column colLg={4} colMd={4} noGutterSm>
+    <HomepageTile
+      ratio={{ default: '2:1', md: '1:1', }}
+      theme="dark"
+      subtitle="Host small virtual classroom meetups and parent conferences."
+      title="Cisco Webex Meetings"
+      identityIcon="pictograms/desktop.svg"
+      link="https://www.webex.com/"
+      hoverColor="#393939"
+    />
+</Column>
+<Column className="bx--row" colMd={4} colLg={4} noGutterSm  className="first-card">
   <HomepageTile
     ratio="2:1"
     theme="teal"
@@ -14,38 +36,17 @@ export default HomepageTemplate;
     iconColor="light"
   />
 </Column>
-<Column colLg={4} colMd={4} noGutterSm>
-    <HomepageTile
-      ratio={{ default: '2:1', md: '1:1', }}
-      theme="dark"
-      subtitle="Share and replay large lectures and video content."
-      title="IBM Watson Media"
-      identityIcon="pictograms/watson--avatar.svg"
-      link="/tips-for-teachers/overview"
-      hoverColor="#393939"
-    />
-</Column>
-<Column colLg={4} colMd={4} noGutterSm>
-    <HomepageTile
-      ratio={{ default: '2:1', md: '1:1', }}
-      theme="dark"
-      subtitle="Best for small virtual classroom meetups and parent conferences."
-      title="Cisco Webex Meetings"
-      identityIcon="pictograms/desktop.svg"
-      link="/for-parents-or-guardians"
-      hoverColor="#393939"
-    />
-</Column>
-</div>
+</Row>
+
 <div className="bx--row" style={{ marginTop: "0" }}>
 <Column colMd={4} colLg={4} noGutterSm>
     <HomepageTile
       ratio={{ default: '2:1', md: '1:1', }}
       theme="dark"
-      subtitle="Message with larger groups of students in realtime."
-      title="Cisco Webex Teams"
+      subtitle="Access our free online learning resources to explore new ideas, topics and careers."
+      title="IBM Online Events and Learning"
       identityIcon="pictograms/group.svg"
-      link="/for-students"
+      link="https://www.ibm.com/skills/students/"
       hoverColor="#393939"
     />
 </Column>
@@ -53,10 +54,10 @@ export default HomepageTemplate;
     <HomepageTile
       ratio={{ default: '2:1', md: '1:1', }}
       theme="dark"
-      subtitle="Learn how these free tools and courses may help your class. "
+      subtitle="Explore these free tools and resources for remote learning to help keep students engaged and on track."
       title="Free IBM Resources"
       identityIcon="pictograms/bee.svg"
-      link="/for-administrators"
+      link="https://www.ibm.com/remotelearning/ibmresources.html"
       hoverColor="#393939"
     />
 </Column>

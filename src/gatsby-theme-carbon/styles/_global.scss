@@ -23,11 +23,15 @@
 }
 
 .banner-header {
- padding-top: 1rem;
- padding-bottom: 1rem;
- 
- @include carbon--breakpoint("md") {
- width: 57%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  @include carbon--breakpoint("sm") {
+  width: 100%;
+  font-size: 2rem;
+ }
+  @include carbon--breakpoint("md") {
+  width: 57%;
  }
 }
 
@@ -38,6 +42,13 @@
   @include carbon--breakpoint("md") {
     width: 35%;
   }
+  @include carbon--breakpoint("sm") {
+    width: 80%;
+  }
+}
+
+.banner-arrow {
+  fill: "white";
 }
 
 .homepage-image-container {
