@@ -1,9 +1,10 @@
 import React from 'react';
 import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon';
 import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage';
+import { ArrowDown32 } from '@carbon/icons-react';
 // import { calloutLink } from './Homepage.module.scss';
 
-import Remote from '../../images/remote.jpg';
+import Hero from '../../images/hero.png';
 
 const FirstLeftText = () => (
   <p>
@@ -32,10 +33,23 @@ const SecondLeftText = () => <p></p>;
 
 const SecondRightText = () => <p></p>;
 
-const BannerText = () => '';
+const BannerText = () => (
+  <>
+    <div className="banner-header">
+      An unprecedented time for teachers & students
+    </div>
+    <div className="banner-subheader">
+      IBM has experience, tools, and resources that can help ensure learning
+      never stops
+    </div>
+    <div style={{ fill: 'white' }}>
+      <ArrowDown32 />
+    </div>
+  </>
+);
 
 const customProps = {
-  Banner: <HomepageBanner renderText={BannerText} image={Remote} />,
+  Banner: <HomepageBanner renderText={BannerText} image={Hero} />,
   FirstCallout: (
     <HomepageCallout
       backgroundColor="#030303"
