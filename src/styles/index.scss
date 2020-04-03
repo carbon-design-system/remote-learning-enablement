@@ -27,17 +27,21 @@
 }
 
 // Certificates
-.certificates {
+.certificates p {
   display: flex;
   flex-wrap: wrap;
 }
 
-.certificates .gatsby-resp-image-wrapper {
+.certificates .bx--link {
   flex-basis: 25%;
   height: auto;
   margin-top: 0;
   margin-right: 2rem !important;
   margin-bottom: 2rem;
+}
+
+.certificates .bx--link:hover {
+  outline: 1px solid $focus;
 }
 
 // IBM Cookies link
