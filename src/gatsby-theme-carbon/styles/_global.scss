@@ -21,3 +21,21 @@
     font-size: 2rem;
   }
 }
+
+.banner-header {
+ padding-top: 1rem;
+ padding-bottom: 1rem;
+ 
+ @include carbon--breakpoint("md") {
+ width: 57%;
+ }
+}
+
+.banner-subheader {
+  @include carbon--type-style("productive-heading-03");
+  width: 50%;
+  padding-bottom: 1rem;
+  @include carbon--breakpoint("md") {
+    width: 35%;
+  }
+}

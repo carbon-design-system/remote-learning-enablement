@@ -18,6 +18,10 @@
 }
 
 .title-with-text h2 {
+  margin-top: 3rem;
+}
+
+.title-with-text h2:first-child {
   margin-top: 0;
   width: 100%;
 }

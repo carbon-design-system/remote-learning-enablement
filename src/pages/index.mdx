@@ -12,10 +12,12 @@ export default HomepageTemplate;
       link="/tips-for-teachers/overview"
       hoverColor="#004144"
       iconColor="light"
-      marginTop="1rem"
+      marginTop="2rem"
     />
 </Column>
-<Column colLg={4} colMd={4} noGutterSm>
+</Row>
+<div className="bx--row" style={{ marginTop: "0" }}>
+<Column colLg={4} colMd={4} offsetLg={4} noGutterSm>
     <HomepageTile
       ratio={{ default: '2:1', md: '1:1', }}
       theme="dark"
@@ -37,9 +39,9 @@ export default HomepageTemplate;
       hoverColor="#393939"
     />
 </Column>
-</Row>
+</div>
 <div className="bx--row" style={{ marginTop: "0" }}>
-<Column colMd={4} colLg={4} offsetLg={0} noGutterSm>
+<Column colMd={4} colLg={4} offsetLg={4} noGutterSm>
     <HomepageTile
       ratio={{ default: '2:1', md: '1:1', }}
       theme="dark"
