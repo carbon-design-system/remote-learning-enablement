@@ -30,13 +30,15 @@
 .certificates p {
   display: flex;
   flex-wrap: wrap;
+  padding-right: 0;
+  justify-content: flex-start;
 }
 
 .certificates .bx--link {
   flex-basis: 25%;
   height: auto;
+  margin: 1rem;
   margin-top: 0;
-  margin-right: 2rem !important;
   margin-bottom: 2rem;
 }
 
