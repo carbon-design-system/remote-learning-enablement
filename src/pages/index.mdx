@@ -2,22 +2,19 @@ import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
 import HomepageTile from "../components/HomepageTile"
 export default HomepageTemplate;
 
-<Row className="homepage-row">
-<Column colMd={4} offsetMd={4} colLg={4} offsetLg={8} noGutterSm>
-    <HomepageTile
-      ratio="2:1"
-      theme="teal"
-      title="Tools and resources"
-      actionIcon="arrowRight"
-      link="/tips-for-teachers/overview"
-      hoverColor="#004144"
-      iconColor="light"
-      marginTop="2rem"
-    />
+<div className="bx--row reverse-row" style={{ marginTop: "0" }}>
+<Column colMd={4} colLg={4} noGutterSm>
+  <HomepageTile
+    ratio="2:1"
+    theme="teal"
+    title="Tools and resources"
+    actionIcon="arrowRight"
+    link="/tips-for-teachers/overview"
+    hoverColor="#004144"
+    iconColor="light"
+  />
 </Column>
-</Row>
-<div className="bx--row" style={{ marginTop: "0" }}>
-<Column colLg={4} colMd={4} offsetLg={4} noGutterSm>
+<Column colLg={4} colMd={4} noGutterSm>
     <HomepageTile
       ratio={{ default: '2:1', md: '1:1', }}
       theme="dark"
@@ -41,7 +38,7 @@ export default HomepageTemplate;
 </Column>
 </div>
 <div className="bx--row" style={{ marginTop: "0" }}>
-<Column colMd={4} colLg={4} offsetLg={4} noGutterSm>
+<Column colMd={4} colLg={4} noGutterSm>
     <HomepageTile
       ratio={{ default: '2:1', md: '1:1', }}
       theme="dark"
