@@ -26,6 +26,20 @@
   width: 100%;
 }
 
+// Certificates
+.certificates {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.certificates .gatsby-resp-image-wrapper {
+  flex-basis: 25%;
+  height: auto;
+  margin-top: 0;
+  margin-right: 2rem !important;
+  margin-bottom: 2rem;
+}
+
 // IBM Cookies link
 .truste_cookie_prefs a {
   font-family: "IBM Plex Sans VF", "Helvetica Neue", Arial, sans-serif !important;
