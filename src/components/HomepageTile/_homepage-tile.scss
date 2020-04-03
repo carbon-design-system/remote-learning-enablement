@@ -223,3 +223,13 @@
     flex-direction: row-reverse;
   }
 }
+
+.first-card {
+  @include carbon--breakpoint("md") {
+    margin-right: 50%;
+  }
+
+  @include carbon--breakpoint("lg") {
+    margin-right: 0;
+  }
+}
