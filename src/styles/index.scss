@@ -1,3 +1,5 @@
+// Text/title row layout
+
 .title-with-text {
   padding-top: 2rem;
 }
@@ -18,4 +20,15 @@
 .title-with-text h2 {
   margin-top: 0;
   width: 100%;
+}
+
+// IBM Cookies link
+.truste_cookie_prefs a {
+  font-family: "IBM Plex Sans VF", "Helvetica Neue", Arial, sans-serif !important;
+  color: $text-01 !important;
+}
+
+.truste_cookie_prefs {
+  margin-right: $spacing-05 !important;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2) !important;
 }
