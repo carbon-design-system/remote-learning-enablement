@@ -1,10 +1,10 @@
-import React from 'react';
-import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon';
-import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage';
-import { ArrowDown32 } from '@carbon/icons-react';
+import React from "react";
+import { HomepageBanner, HomepageCallout } from "gatsby-theme-carbon";
+import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
+import { ArrowDown32 } from "@carbon/icons-react";
 // import { calloutLink } from './Homepage.module.scss';
 
-import Hero from '../../images/hero.png';
+import Hero from "../../images/hero.png";
 
 const FirstLeftText = () => (
   <p>
@@ -19,7 +19,7 @@ const FirstRightText = () => (
       Almost a billion children have seen their schools close as a result of
       COVID-19. As educators and parents look for solutions to keep children
       engaged and learning during these uncertain times, IBM is here to offer
-      guidance.{' '}
+      guidance.{" "}
     </p>
     <br />
     <p>
@@ -42,7 +42,7 @@ const BannerText = () => (
       IBM has experience, tools, and resources that can help ensure learning
       never stops
     </div>
-    <div style={{ fill: 'white' }}>
+    <div style={{ fill: "white" }}>
       <ArrowDown32 />
     </div>
   </>
@@ -58,14 +58,7 @@ const customProps = {
       rightText={FirstRightText}
     />
   ),
-  SecondCallout: (
-    <HomepageCallout
-      leftText={SecondLeftText}
-      rightText={SecondRightText}
-      color="white"
-      backgroundColor="#061f80"
-    />
-  ),
+  SecondCallout: null
 };
 
 // spreading the original props gives us props.children (mdx content)
