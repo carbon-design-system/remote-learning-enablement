@@ -23,12 +23,12 @@
 }
 
 .banner-header {
- padding-top: 1rem;
- padding-bottom: 1rem;
- 
- @include carbon--breakpoint("md") {
- width: 57%;
- }
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  @include carbon--breakpoint("md") {
+    width: 57%;
+  }
 }
 
 .banner-subheader {
@@ -44,4 +44,5 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 2rem;
 }
