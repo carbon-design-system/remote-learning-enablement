@@ -16,7 +16,9 @@
   "dependencies": {
     "@carbon/icons-react": "^10.9.2",
     "@carbon/layout": "^10.8.2",
+    "@sindresorhus/slugify": "^0.11.0",
     "carbon-components": "^10.10.2",
+    "carbon-components-react": "^7.10.3",
     "classnames": "^2.2.6",
     "gatsby": "^2.19.0",
     "gatsby-theme-carbon": "^1.22.1",

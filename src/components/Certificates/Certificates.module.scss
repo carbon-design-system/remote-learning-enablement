@@ -1,0 +1,30 @@
+.certificates {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.certificates button {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  flex-basis: 25%;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  border: 1px solid $ui-03;
+  transition: border-color 130ms ease;
+}
+
+.certificates .selected {
+  border: 1px solid $interactive-01;
+}
+
+.customize {
+  display: flex;
+  flex-direction: column;
+}
+
+.canvas {
+  border: 1px solid $ui-03;
+  width: calc(100% - 3rem);
+}
