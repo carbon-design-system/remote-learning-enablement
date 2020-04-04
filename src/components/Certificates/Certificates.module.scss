@@ -24,7 +24,10 @@
   flex-direction: column;
 }
 
+.customize > * {
+  width: 100%;
+}
+
 .canvas {
   border: 1px solid $ui-03;
-  width: calc(100% - 3rem);
 }

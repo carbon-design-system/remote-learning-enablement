@@ -122,7 +122,6 @@ const Certificates = () => {
           <TextInput
             placeholder="Jane D."
             helperText="Click the personalized certificate to save it"
-            style={{ width: 'calc(100% - 3rem)' }}
             light
             labelText="Enter the student's name"
             onChange={e => setName(e.target.value)}
