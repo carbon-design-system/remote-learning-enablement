@@ -1,0 +1,158 @@
+// Background of the left nav
+.bx--side-nav__navigation {
+  background-color: white;
+}
+
+// Text of the top level nav items expect ones without nexted items
+.bx--side-nav .bx--side-nav__submenu[aria-haspopup="true"],
+.bx--side-nav__item > a.bx--side-nav__link {
+  color: $carbon--gray-100;
+}
+
+// Background of the nested nav items
+.bx--side-nav__item:not(.bx--side-nav__item--active):hover {
+  background-color: $carbon--white-0;
+}
+
+// Selected hover item??
+.bx--side-nav__submenu:hover {
+  background-color: hotpink;
+}
+
+// Selected drop-down nav item
+.bx--side-nav .bx--side-nav__item .bx--side-nav__submenu[aria-expanded="true"] {
+  background-color: $carbon--white-0;
+  color: $carbon--gray-100;
+}
+
+// Hover over effect for top-level listed nav items
+.bx--side-nav__item:not(.bx--side-nav__item--active):hover
+  > .bx--side-nav__submenu,
+.bx--side-nav__menu[role="menu"]
+  a.bx--side-nav__link[role="menuitem"]:not(.bx--side-nav__link--current):not([aria-current="page"]):hover,
+.bx--side-nav__item:not(.bx--side-nav__item--active):hover
+  > .bx--side-nav__link {
+  background-color: $carbon--gray-20;
+  color: $carbon--gray-100;
+}
+
+.bx--side-nav
+  .bx--side-nav__item
+  .bx--side-nav__submenu[aria-expanded="true"]:hover {
+  background-color: $carbon--gray-20;
+  color: $carbon--gray-100;
+}
+
+// Nested items text
+.bx--side-nav a.bx--side-nav__link > .bx--side-nav__link-text {
+  color: $carbon--gray-100;
+}
+
+// Hover over effects for nested nav items except ones without nested items
+.bx--side-nav__item:not(.bx--side-nav__item--active):hover
+  > .bx--side-nav__submenu
+  .bx--side-nav__link-text,
+.bx--side-nav__menu[role="menu"]
+  a.bx--side-nav__link[role="menuitem"]:not(.bx--side-nav__link--current):not([aria-current="page"]):hover
+  .bx--side-nav__link-text,
+.bx--side-nav__item:not(.bx--side-nav__item--active):hover
+  > .bx--side-nav__link
+  .bx--side-nav__link-text {
+  color: $carbon--gray-100;
+}
+
+// Hover over effects for nested items.
+.bx--side-nav__item:not(.bx--side-nav__item--active):hover > .bx--side-nav__submenu, .bx--side-nav__menu a.bx--side-nav__link:not(.bx--side-nav__link--current):not([aria-current='page']):hover, .bx--side-nav__item:not(.bx--side-nav__item--active):hover > .bx--side-nav__link {
+  background-color: $carbon--gray-20;
+  // color: var(--cds-ui-01, #f4f4f4);
+}
+
+// Hover over effects for nav items without nested items
+.bx--side-nav__item:not(.bx--side-nav__item--active):hover
+  .bx--side-nav__item:not(.bx--side-nav__item--active)
+  > .bx--side-nav__submenu:hover,
+.bx--side-nav__item:not(.bx--side-nav__item--active)
+  > .bx--side-nav__link:hover,
+.bx--side-nav__menu[role="menu"]
+  a.bx--side-nav__link[role="menuitem"]:not(.bx--side-nav__link--current):not([aria-current="page"]):hover,
+.bx--side-nav a.bx--header__menu-item[role="menuitem"]:hover,
+.bx--side-nav
+  .bx--header__menu-title[role="menuitem"][aria-expanded="true"]:hover {
+  color: greenyellow;
+}
+
+// Hover over effect for nav items without nexted items again?
+.bx--side-nav__item:not(.bx--side-nav__item--active):hover
+  .bx--side-nav__item:not(.bx--side-nav__item--active)
+  > .bx--side-nav__submenu:hover,
+.bx--side-nav__item:not(.bx--side-nav__item--active)
+  > .bx--side-nav__link:hover,
+.bx--side-nav__menu[role="menu"]
+  a.bx--side-nav__link[role="menuitem"]:not(.bx--side-nav__link--current):not([aria-current="page"]):hover,
+.bx--side-nav a.bx--header__menu-item[role="menuitem"]:hover,
+.bx--side-nav
+  .bx--header__menu-title[role="menuitem"][aria-expanded="true"]:hover {
+  color: $carbon--gray-100;
+}
+
+// Hover over effect for nav items without nexted items again.... whaaa?
+.bx--side-nav--website--dark
+  .bx--side-nav__item:not(.bx--side-nav__item--active)
+  > .bx--side-nav__link:hover
+  > span,
+.bx--side-nav--website--dark
+  .bx--side-nav__item:not(.bx--side-nav__item--active)
+  .bx--side-nav__menu-item
+  > .bx--side-nav__link:hover
+  > span {
+  color: $carbon--gray-100;
+}
+
+// Chevron color
+.bx--side-nav--website .bx--side-nav__icon > svg {
+  fill: $carbon--gray-100;
+}
+
+// Chevron color when selected
+.bx--side-nav
+  .bx--side-nav__item
+  .bx--side-nav__submenu[aria-expanded="true"]
+  .bx--side-nav__icon
+  svg {
+  fill: $carbon--gray-100;
+}
+
+// Chevron color on hover
+.bx--side-nav
+  .bx--side-nav__item
+  .bx--side-nav__submenu[aria-expanded="true"]:hover
+  .bx--side-nav__icon
+  svg {
+  fill: $carbon--gray-100;
+}
+
+// Chevron color on hover in the "down" position
+.bx--side-nav__item:not(.bx--side-nav__item--active):hover
+  > .bx--side-nav__submenu
+  .bx--side-nav__icon
+  svg,
+.bx--side-nav__menu[role="menu"]
+  a.bx--side-nav__link[role="menuitem"]:not(.bx--side-nav__link--current):not([aria-current="page"]):hover
+  .bx--side-nav__icon
+  svg,
+.bx--side-nav__item:not(.bx--side-nav__item--active):hover
+  > .bx--side-nav__link
+  .bx--side-nav__icon
+  svg {
+  fill: $carbon--gray-100;
+}
+
+// Divider HR
+.bx--side-nav__divider {
+  border-style: none;
+}
+
+// Left nav border
+.#{$prefix}--side-nav {
+  border-right: 1px solid $carbon--gray-20;
+}

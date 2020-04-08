@@ -1,6 +1,9 @@
 @import "../../components/HomepageTile/homepage-tile";
 @import "homepage-quote";
 
+// Overrides the homepage to be white
+@import "white-home-page";
+
 .section-header-h2 {
   font-size: 1.75rem;
   font-weight: 400;
