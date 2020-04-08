@@ -1,15 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="65px" height="57px" viewBox="0 0 65 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
-    <title>desktop</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
-        <g id="option-1" transform="translate(-671.000000, -1471.000000)" stroke="#9EF0F0" stroke-width="0.525">
-            <g id="Group-2" transform="translate(335.000000, 1227.000000)">
-                <g id="desktop" transform="translate(337.000000, 245.000000)">
-                    <path d="M59.3939394,44.5454545 L4.24242424,44.5454545 C1.90909091,44.5454545 0,42.6363636 0,40.3030303 L0,4.24242424 C0,1.90909091 1.90909091,0 4.24242424,0 L59.3939394,0 C61.7272727,0 63.6363636,1.90909091 63.6363636,4.24242424 L63.6363636,40.3030303 C63.6363636,42.6363636 61.7272727,44.5454545 59.3939394,44.5454545 Z M16.969697,55.1515152 L46.6666667,55.1515152 M31.8181818,44.5454545 L31.8181818,55.1515152 M0,33.9393939 L63.6363636,33.9393939" id="Shape"></path>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg focusable="false" preserveAspectRatio="xMidYMid meet" 
+    xmlns="http://www.w3.org/2000/svg" width="35%" height="35%" viewBox="0 0 48 48" aria-hidden="true" style="will-change: transform;">
+    <path fill="none" stroke="#08bdba" stroke-linejoin="round" stroke-miterlimit="10" stroke-width=".72" d="M37,32 H11c-1.1,0-2-0.9-2-2V13c0-1.1,0.9-2,2-2h26c1.1,0,2,0.9,2,2v17C39,31.1,38.1,32,37,32z M17,37h14 M24,32v5 M9,27h30"></path>
+    <title>Desktop</title>
 </svg>

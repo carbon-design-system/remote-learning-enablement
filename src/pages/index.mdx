@@ -2,30 +2,8 @@ import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
 import HomepageTile from "../components/HomepageTile"
 export default HomepageTemplate;
 
-<Row className="image-card-group" style={{ marginTop: "0" }}>
-<Column colLg={4} colMd={4} noGutterSm>
-    <HomepageTile
-      ratio={{ default: '2:1', md: '1:1', }}
-      theme="dark"
-      subtitle="Share and replay large lectures and video content."
-      title="IBM Watson Media"
-      identityIcon="pictograms/watson--avatar.svg"
-      link="http://watson.media.ibm.com/platinum_free_trial.html"
-      hoverColor="#393939"
-    />
-</Column>
-<Column colLg={4} colMd={4} noGutterSm>
-    <HomepageTile
-      ratio={{ default: '2:1', md: '1:1', }}
-      theme="dark"
-      subtitle="Host small virtual classroom meetups and parent conferences."
-      title="Cisco Webex Meetings"
-      identityIcon="pictograms/desktop.svg"
-      link="https://www.webex.com/"
-      hoverColor="#393939"
-    />
-</Column>
-<Column className="bx--row" colMd={4} colLg={4} noGutterSm  className="first-card">
+<div className="bx--row reverse-row" style={{ marginTop: "92px" }}>
+<Column colMd={4} colLg={4} noGutterSm  className="first-card">
   <HomepageTile
     ratio="2:1"
     theme="teal"
@@ -36,29 +14,51 @@ export default HomepageTemplate;
     iconColor="light"
   />
 </Column>
-</Row>
-
-<div className="bx--row" style={{ marginTop: "0" }}>
-<Column colMd={4} colLg={4} noGutterSm>
+<Column colLg={4} colMd={4} noGutterSm>
     <HomepageTile
       ratio={{ default: '2:1', md: '1:1', }}
-      theme="dark"
-      subtitle="Access our free online learning resources to explore new ideas, topics and careers."
-      title="IBM Online Events and Learning"
-      identityIcon="pictograms/group.svg"
-      link="https://www.ibm.com/skills/students/"
-      hoverColor="#393939"
+      theme="gray"
+      subtitle="Best for small virtual classroom meetups and parent conferences."
+      title="Cisco Webex Meetings"
+      identityIcon="pictograms/desktop.svg"
+      link="https://www.webex.com/"
+      hoverColor="#e0e0e0" //gray20
     />
 </Column>
 <Column colLg={4} colMd={4} noGutterSm>
     <HomepageTile
       ratio={{ default: '2:1', md: '1:1', }}
-      theme="dark"
-      subtitle="Explore these free tools and resources for remote learning to help keep students engaged and on track."
+      theme="gray"
+      subtitle="Share and replay large lectures and video content."
+      title="IBM Watson Media"
+      identityIcon="pictograms/watson--avatar.svg"
+      link="http://watson.media.ibm.com/platinum_free_trial.html?_ga=2.175246629.680902131.1586287561-1991982996.1584714112"
+      hoverColor="#e0e0e0" //gray20
+    />
+</Column>
+
+</div>
+<div className="bx--row" style={{ marginTop: "0" }}>
+<Column colMd={4} colLg={4} noGutterSm>
+    <HomepageTile
+      ratio={{ default: '2:1', md: '1:1', }}
+      theme="gray"
+      subtitle="Access our free online learning resources to explore new ideas, topics and careers."
+      title="IBM Online Events and Learning"
+      identityIcon="pictograms/group.svg"
+      link="https://www.ibm.com/skills/students/?_ga=2.209511829.680902131.1586287561-1991982996.1584714112"
+      hoverColor="#e0e0e0" //gray20
+    />
+</Column>
+<Column colLg={4} colMd={4} noGutterSm>
+    <HomepageTile
+      ratio={{ default: '2:1', md: '1:1', }}
+      theme="gray"
+      subtitle="Learn how these free tools and courses may help your class. "
       title="Free IBM Resources"
       identityIcon="pictograms/bee.svg"
-      link="https://www.ibm.com/remotelearning/ibmresources.html"
-      hoverColor="#393939"
+      link="https://remote-learning-enablement.now.sh/tools-and-resources/overview"
+      hoverColor="#e0e0e0" //gray20
     />
 </Column>
 </div>
@@ -97,7 +97,7 @@ Every day, IBM delivers the best online meeting tools to enable our employees ar
 
 During these unprecedented times, educators are turning to innovative solutions to help students keep learning. The technologies and resources contained on these pages highlight IBM’s best practices and recommendations for engaging students remotely.
 
-Learn more about [IBM’s response to COVID-19](https://www.ibm.com/thought-leadership/covid19/).
+Learn more about [IBM’s response to COVID-19](https://www.ibm.com/covid19).
 <br/>
 <br/>
 
