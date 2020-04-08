@@ -80,7 +80,12 @@ const Certificates = () => {
             onClick={() => onClick(helpingOthers, 'Helping others')}
             type="button"
           >
-            <img alt="helping others certificate" src={helpingOthers} />
+            <img
+              width="626"
+              height="726"
+              alt="helping others certificate"
+              src={helpingOthers}
+            />
           </button>
           <button
             className={
@@ -89,7 +94,12 @@ const Certificates = () => {
             onClick={() => onClick(collaboration, 'Collaboration')}
             type="button"
           >
-            <img alt="collaboration certificate" src={collaboration} />
+            <img
+              width="626"
+              height="726"
+              alt="collaboration certificate"
+              src={collaboration}
+            />
           </button>
         </Column>
         <Column colSm={2} colMd={2} colLg={3} className={styles.certificates}>
@@ -100,7 +110,12 @@ const Certificates = () => {
             onClick={() => onClick(kindness, 'Kindness')}
             type="button"
           >
-            <img alt="kindness certificate" src={kindness} />
+            <img
+              width="626"
+              height="726"
+              alt="kindness certificate"
+              src={kindness}
+            />
           </button>
           <button
             className={
@@ -109,7 +124,12 @@ const Certificates = () => {
             onClick={() => onClick(participation, 'Participation')}
             type="button"
           >
-            <img alt="participation certificate" src={participation} />
+            <img
+              width="626"
+              height="726"
+              alt="participation certificate"
+              src={participation}
+            />
           </button>
         </Column>
         <Column colSm={2} colMd={2} colLg={3} className={styles.certificates}>
@@ -120,7 +140,12 @@ const Certificates = () => {
             onClick={() => onClick(wellness, 'Wellness')}
             type="button"
           >
-            <img alt="wellness certificate" src={wellness} />
+            <img
+              width="626"
+              height="726"
+              alt="wellness certificate"
+              src={wellness}
+            />
           </button>
         </Column>
       </Row>
