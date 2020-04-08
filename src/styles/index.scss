@@ -26,26 +26,6 @@
   width: 100%;
 }
 
-// Certificates
-.certificates p {
-  display: flex;
-  flex-wrap: wrap;
-  padding-right: 0;
-  justify-content: flex-start;
-}
-
-.certificates .bx--link {
-  flex-basis: 25%;
-  height: auto;
-  margin: 1rem;
-  margin-top: 0;
-  margin-bottom: 2rem;
-}
-
-.certificates .bx--link:hover {
-  outline: 1px solid $focus;
-}
-
 // IBM Cookies link
 .truste_cookie_prefs a {
   font-family: "IBM Plex Sans VF", "Helvetica Neue", Arial, sans-serif !important;
@@ -55,4 +35,9 @@
 .truste_cookie_prefs {
   margin-right: $spacing-05 !important;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+// reset
+*::-moz-focus-inner {
+  border: none;
 }

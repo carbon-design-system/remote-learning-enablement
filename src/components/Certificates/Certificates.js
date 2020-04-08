@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { Row, Column } from 'gatsby-theme-carbon';
 import { TextInput } from 'carbon-components-react';
 import slugify from '@sindresorhus/slugify';
+import cx from 'classnames';
 
 import styles from './Certificates.module.scss';
 
@@ -33,12 +34,17 @@ const Certificates = () => {
         ? 'white'
         : '#171717';
 
-    ctx.font = 'bold 32px IBM Plex Sans';
+    const textWidth = ctx.measureText(name).width;
+
+    // reduce font size to compensate for long names
+    const fontSize = textWidth < 310 ? 32 : (310 / textWidth) * 32;
+
+    ctx.font = `bold ${fontSize}px IBM Plex Sans`;
 
     img.onload = () => {
       ctx.drawImage(img, 0, 0);
       ctx.fillStyle = color;
-      ctx.fillText(name, x, 590);
+      ctx.fillText(name, x - 5, 590, 310);
     };
   }, [name, selectedCertificate]);
 
@@ -62,11 +68,11 @@ const Certificates = () => {
 
   return (
     <>
-      <Row className="title-with-text">
-        <Column colMd={2} colLg={3}>
+      <Row className={cx('title-with-text', styles.certificates)}>
+        <Column className={styles.title} colMd={2} colLg={3}>
           <h2>Select a certificate</h2>
         </Column>
-        <Column colMd={6} colLg={8} className={styles.certificates}>
+        <Column colSm={2} colMd={2} colLg={3} className={styles.certificates}>
           <button
             className={
               selectedCertificateNode === helpingOthers ? styles.selected : ''
@@ -85,6 +91,8 @@ const Certificates = () => {
           >
             <img alt="collaboration certificate" src={collaboration} />
           </button>
+        </Column>
+        <Column colSm={2} colMd={2} colLg={3} className={styles.certificates}>
           <button
             className={
               selectedCertificateNode === kindness ? styles.selected : ''
@@ -103,6 +111,8 @@ const Certificates = () => {
           >
             <img alt="participation certificate" src={participation} />
           </button>
+        </Column>
+        <Column colSm={2} colMd={2} colLg={3} className={styles.certificates}>
           <button
             className={
               selectedCertificateNode === wellness ? styles.selected : ''
@@ -115,10 +125,10 @@ const Certificates = () => {
         </Column>
       </Row>
       <Row className="title-with-text">
-        <Column colMd={2} colLg={3}>
+        <Column className={styles.title} colMd={2} colLg={3}>
           <h2>Customize</h2>
         </Column>
-        <Column colMd={5} colLg={7} className={styles.customize}>
+        <Column colMd={6} colLg={6} className={styles.customize}>
           <TextInput
             placeholder="Jane D."
             helperText="Click the personalized certificate to save it"
@@ -128,6 +138,8 @@ const Certificates = () => {
             type="text"
           />
           <canvas
+            role="button"
+            tabIndex="0"
             onClick={onCanvasClick}
             className={styles.canvas}
             height="726"

@@ -1,18 +1,19 @@
-.certificates {
-  display: flex;
-  flex-wrap: wrap;
+.title {
+  margin-bottom: var(--space);
 }
 
 .certificates button {
   padding: 0;
   border: none;
   cursor: pointer;
-  flex-basis: 25%;
-  margin-right: 2rem;
+  width: 100%;
+  margin: 0;
   margin-bottom: 2rem;
-  margin-top: 0;
   border: 1px solid $ui-03;
   transition: border-color 130ms ease;
+  &:focus {
+    outline: 2px solid $focus;
+  }
 }
 
 .certificates .selected {
@@ -30,4 +31,9 @@
 
 .canvas {
   border: 1px solid $ui-03;
+  padding: 0;
+  cursor: pointer;
+  &:focus {
+    outline: 2px solid $focus;
+  }
 }
