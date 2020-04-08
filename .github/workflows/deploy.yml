@@ -27,9 +27,11 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Install ibmcloud cli
-        run: |
-          curl -fsSL https://clis.cloud.ibm.com/install/osx | sh
+      - name: Install IBM Cloud CLI
+        run: curl -fsSL https://clis.cloud.ibm.com/install/osx | sh
+      - name: Install Cloud Foundry CLI
+        run: ibmcloud cf install
+        
       - name: Login to ibmcloud
         env:
           API_KEY: ${{ secrets.API_KEY }}
