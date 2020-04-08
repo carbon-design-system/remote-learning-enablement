@@ -61,8 +61,8 @@
         position: absolute;
         left: 1rem;
         bottom: 1rem;
-        width: 32px;
-        height: 32px;
+        width: 96px;
+        height: 96px;
       }
     }
 
@@ -120,6 +120,18 @@
 
       .#{$prefix}--homepage-idl-tile-action-icon {
         fill: $carbon--white-0 !important;
+      }
+    }
+
+    &.#{$prefix}--homepage-idl-tile__gray {
+      color: $carbon--black-100;
+
+      .#{$prefix}--homepage-idl-tile-background {
+        background-color: $carbon--white-0;
+      }
+
+      .#{$prefix}--homepage-idl-tile-action-icon {
+        fill: $carbon--black-100 !important;
       }
     }
 

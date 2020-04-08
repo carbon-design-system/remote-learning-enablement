@@ -1,10 +1,10 @@
-import React from "react";
-import { HomepageBanner, HomepageCallout } from "gatsby-theme-carbon";
-import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
-import { ArrowDown32 } from "@carbon/icons-react";
+import React from 'react';
+import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon';
+import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage';
+import { ArrowDown32 } from '@carbon/icons-react';
 // import { calloutLink } from './Homepage.module.scss';
 
-import Hero from "../../images/hero.png";
+import Hero from '../../images/hero.png';
 
 const FirstLeftText = () => (
   <p>
@@ -19,11 +19,11 @@ const FirstRightText = () => (
       Almost a billion children have seen their schools close as a result of
       COVID-19. As educators and parents look for solutions to keep children
       engaged and learning during these uncertain times, IBM is here to offer
-      guidance.{" "}
+      guidance.{' '}
     </p>
     <br />
     <p>
-      Support includes{" "}
+      Support includes{' '}
       <a href="/tools-and-resources/overview">tools and resources</a> to help
       make remote learning effective and guidance for your role in the school
       community.
@@ -44,7 +44,7 @@ const BannerText = () => (
       IBM has experience, tools, and resources that can help ensure learning
       never stops
     </div>
-    <div style={{ fill: "white" }}>
+    <div style={{ fill: 'white' }}>
       <ArrowDown32 />
     </div>
   </>
@@ -54,13 +54,13 @@ const customProps = {
   Banner: <HomepageBanner renderText={BannerText} image={Hero} />,
   FirstCallout: (
     <HomepageCallout
-      backgroundColor="#161616"
-      color="white"
+      backgroundColor="#f4f4f4"
+      color="black"
       leftText={FirstLeftText}
       rightText={FirstRightText}
     />
   ),
-  SecondCallout: null
+  SecondCallout: null,
 };
 
 // spreading the original props gives us props.children (mdx content)

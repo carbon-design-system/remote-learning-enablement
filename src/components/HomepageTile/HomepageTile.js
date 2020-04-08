@@ -147,6 +147,8 @@ const HomepageTile = ({
         return `${prefix}--homepage-idl-tile ${prefix}--homepage-idl-tile__dark`;
       case 'white':
         return `${prefix}--homepage-idl-tile ${prefix}--homepage-idl-tile__white`;
+      case 'gray':
+        return `${prefix}--homepage-idl-tile ${prefix}--homepage-idl-tile__gray`;
       default:
         return `${prefix}--homepage-idl-tile`;
     }
