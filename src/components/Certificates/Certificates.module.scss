@@ -17,7 +17,8 @@
 }
 
 .certificates button img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .certificates .selected {
@@ -36,6 +37,7 @@
 .canvas {
   border: 1px solid $ui-03;
   padding: 0;
+  height: auto;
   cursor: pointer;
   &:focus {
     outline: 2px solid $focus;
