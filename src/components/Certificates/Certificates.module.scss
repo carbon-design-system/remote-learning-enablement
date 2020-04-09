@@ -1,0 +1,45 @@
+.title {
+  margin-bottom: var(--space);
+}
+
+.certificates button {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 2rem;
+  border: 1px solid $ui-03;
+  transition: border-color 130ms ease;
+  &:focus {
+    outline: 2px solid $focus;
+  }
+}
+
+.certificates button img {
+  max-width: 100%;
+  height: auto;
+}
+
+.certificates .selected {
+  border: 1px solid $interactive-01;
+}
+
+.customize {
+  display: flex;
+  flex-direction: column;
+}
+
+.customize > * {
+  width: 100%;
+}
+
+.canvas {
+  border: 1px solid $ui-03;
+  padding: 0;
+  height: auto;
+  cursor: pointer;
+  &:focus {
+    outline: 2px solid $focus;
+  }
+}
