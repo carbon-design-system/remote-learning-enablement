@@ -1,0 +1,33 @@
+.button {
+  width: $spacing-09;
+  height: $spacing-09;
+  border-radius: 50%;
+  background: $carbon--gray-30;
+  border-color: transparent;
+  position: fixed;
+  bottom: $spacing-09;
+  right: $spacing-07;
+  transition: all $duration--fast-02;
+
+  cursor: pointer;
+  z-index: z("modal");
+  padding-top: 0.325rem;
+}
+
+.button:hover {
+  background: $carbon--black-100;
+  border-color: transparent;
+}
+
+.button:focus {
+  outline: none;
+  border: 2px solid $focus;
+}
+
+.button svg {
+  fill: $carbon--black-100;
+}
+
+.button:hover svg {
+  fill: $carbon--white-0;
+}
