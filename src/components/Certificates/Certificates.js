@@ -6,11 +6,11 @@ import cx from 'classnames';
 
 import styles from './Certificates.module.scss';
 
-import collaboration from './images/collaboration.png';
-import helpingOthers from './images/helping_others.png';
-import kindness from './images/kindness.png';
-import participation from './images/participation.png';
-import wellness from './images/wellness.png';
+import collaboration from './images/collaboration.jpg';
+import helpingOthers from './images/helping_others.jpg';
+import kindness from './images/kindness.jpg';
+import participation from './images/participation.jpg';
+import wellness from './images/wellness.jpg';
 
 const Certificates = () => {
   const canvasRef = useRef();
