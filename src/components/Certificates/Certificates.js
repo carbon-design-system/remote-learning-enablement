@@ -156,7 +156,7 @@ const Certificates = () => {
         <Column colMd={6} colLg={6} className={styles.customize}>
           <TextInput
             placeholder="Jane D."
-            helperText="Click the personalized certificate to save it"
+            helperText="Click the personalized certificate to download and save"
             light
             labelText="Enter the student's name"
             onChange={e => setName(e.target.value)}
