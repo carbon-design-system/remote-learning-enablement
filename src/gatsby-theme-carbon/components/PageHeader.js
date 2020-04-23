@@ -15,6 +15,7 @@ import {
 const PageHeader = ({ title, tabs = [], backgroundImages = [] }) => {
   const isMobile = useMedia({ maxWidth: breakpoints.md.width });
   const isDesktop = useMedia({ minWidth: breakpoints.lg.width });
+  const isXlg = useMedia({ minWidth: breakpoints.xlg.width });
 
   let backgroundImage = '';
   if (backgroundImages.length > 0) {
@@ -23,6 +24,16 @@ const PageHeader = ({ title, tabs = [], backgroundImages = [] }) => {
         ? backgroundImages[0]
         : backgroundImages[backgroundImages.length - 1]
     })`;
+  }
+
+  let paddingLeft = '';
+
+  if (isDesktop) {
+    paddingLeft = '2rem';
+  }
+
+  if (isXlg) {
+    paddingLeft = '144px';
   }
 
   return (
@@ -37,10 +48,7 @@ const PageHeader = ({ title, tabs = [], backgroundImages = [] }) => {
       }}
       className={cx(pageHeader, { [withTabs]: tabs.length })}
     >
-      <div
-        style={{ paddingLeft: isDesktop ? '144px' : '' }}
-        className="bx--grid"
-      >
+      <div style={{ paddingLeft }} className="bx--grid">
         <div className="bx--row">
           <div className="bx--col-lg-6">
             <h1
