@@ -15,6 +15,7 @@ import {
 const PageHeader = ({ title, tabs = [], backgroundImages = [] }) => {
   const isMobile = useMedia({ maxWidth: breakpoints.md.width });
   const isDesktop = useMedia({ minWidth: breakpoints.lg.width });
+  const isXlg = useMedia({ minWidth: breakpoints.xlg.width });
   const isMax = useMedia({ minWidth: breakpoints.max.width });
 
   let backgroundImage = '';
@@ -29,7 +30,11 @@ const PageHeader = ({ title, tabs = [], backgroundImages = [] }) => {
   let paddingLeft = '';
 
   if (isDesktop) {
-    paddingLeft = '7%';
+    paddingLeft = '6%';
+  }
+
+  if (isXlg) {
+    paddingLeft = '9%';
   }
 
   if (isMax) {
