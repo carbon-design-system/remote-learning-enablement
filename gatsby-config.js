@@ -17,8 +17,6 @@ module.exports = {
         display: 'browser',
       },
     },
-    {
-      resolve: 'gatsby-theme-carbon',
-    },
+    'gatsby-theme-carbon',
   ],
 };
