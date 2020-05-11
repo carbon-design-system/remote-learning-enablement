@@ -17,23 +17,23 @@ const links = {
   firstCol: [
     {
       href: "https://www.ibm.com/contact/us/en/?lnk=flg-cont-usen",
-      linkText: "Contact IBM"
+      linkText: "Contact IBM",
     },
     {
       href: "https://www.ibm.com/privacy/us/en/?lnk=flg-priv-usen",
-      linkText: "Privacy"
-    }
+      linkText: "Privacy",
+    },
   ],
   secondCol: [
     {
       href: "https://www.ibm.com/us-en/legal?lnk=flg-tous-usen",
-      linkText: "Terms of use"
+      linkText: "Terms of use",
     },
     {
-      href: "https://www.ibm.com/contact/us/en/?lnk=flg-cont-usen",
-      linkText: "Accessibility"
-    }
-  ]
+      href: "https://www.ibm.com/accessibility/us/en/?lnk=flg-acce-usen",
+      linkText: "Accessibility",
+    },
+  ],
 };
 
 const CustomFooter = () => <Footer links={links} Content={Content} />;

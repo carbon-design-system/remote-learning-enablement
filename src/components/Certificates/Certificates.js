@@ -1,38 +1,41 @@
-import React, { useRef, useState, useEffect } from 'react';
-import { Row, Column } from 'gatsby-theme-carbon';
-import { TextInput } from 'carbon-components-react';
-import slugify from '@sindresorhus/slugify';
-import cx from 'classnames';
+import React, { useRef, useState, useEffect } from "react";
+import { Row, Column } from "gatsby-theme-carbon";
+import { TextInput } from "carbon-components-react";
+import slugify from "@sindresorhus/slugify";
+import cx from "classnames";
 
-import styles from './Certificates.module.scss';
+import styles from "./Certificates.module.scss";
 
-import collaboration from './images/collaboration.jpg';
-import helpingOthers from './images/helping_others.jpg';
-import kindness from './images/kindness.jpg';
-import participation from './images/participation.jpg';
-import wellness from './images/wellness.jpg';
+import collaboration from "./images/collaboration.jpg";
+import helpingOthers from "./images/helping_others.jpg";
+import kindness from "./images/kindness.jpg";
+import participation from "./images/participation.jpg";
+import wellness from "./images/wellness.jpg";
+import grow from "./images/grow.jpg";
 
 const Certificates = () => {
   const canvasRef = useRef();
-  const [name, setName] = useState('');
+  const [name, setName] = useState("");
   const [selectedCertificate, setSelectedCertificate] = useState({
     node: helpingOthers,
-    name: 'Helping others',
+    name: "Helping others",
   });
 
   useEffect(() => {
     const certificateNode = selectedCertificate.node;
-    const ctx = canvasRef.current.getContext('2d');
+    const ctx = canvasRef.current.getContext("2d");
 
-    ctx.textAlign = 'center';
+    ctx.textAlign = "center";
     const img = new Image();
     img.src = selectedCertificate.node;
     const x = canvasRef.current.width / 2;
 
     const color =
-      certificateNode === participation || certificateNode === wellness
-        ? 'white'
-        : '#171717';
+      certificateNode === participation ||
+      certificateNode === wellness ||
+      certificateNode === grow
+        ? "white"
+        : "#171717";
 
     const textWidth = ctx.measureText(name).width;
 
@@ -57,7 +60,7 @@ const Certificates = () => {
 
   const onCanvasClick = () => {
     const { certificateName } = selectedCertificate;
-    const link = document.createElement('a');
+    const link = document.createElement("a");
     const filename = `${name} ${certificateName} certificate`;
     link.download = `${slugify(filename)}.png`;
     link.href = canvasRef.current.toDataURL();
@@ -68,16 +71,16 @@ const Certificates = () => {
 
   return (
     <>
-      <Row className={cx('title-with-text', styles.certificates)}>
+      <Row className={cx("title-with-text", styles.certificates)}>
         <Column className={styles.title} colMd={2} colLg={3}>
           <h2>Select a certificate</h2>
         </Column>
         <Column colSm={2} colMd={2} colLg={3} className={styles.certificates}>
           <button
             className={
-              selectedCertificateNode === helpingOthers ? styles.selected : ''
+              selectedCertificateNode === helpingOthers ? styles.selected : ""
             }
-            onClick={() => onClick(helpingOthers, 'Helping others')}
+            onClick={() => onClick(helpingOthers, "Helping others")}
             type="button"
           >
             <img
@@ -89,9 +92,9 @@ const Certificates = () => {
           </button>
           <button
             className={
-              selectedCertificateNode === collaboration ? styles.selected : ''
+              selectedCertificateNode === collaboration ? styles.selected : ""
             }
-            onClick={() => onClick(collaboration, 'Collaboration')}
+            onClick={() => onClick(collaboration, "Collaboration")}
             type="button"
           >
             <img
@@ -105,9 +108,9 @@ const Certificates = () => {
         <Column colSm={2} colMd={2} colLg={3} className={styles.certificates}>
           <button
             className={
-              selectedCertificateNode === kindness ? styles.selected : ''
+              selectedCertificateNode === kindness ? styles.selected : ""
             }
-            onClick={() => onClick(kindness, 'Kindness')}
+            onClick={() => onClick(kindness, "Kindness")}
             type="button"
           >
             <img
@@ -119,9 +122,9 @@ const Certificates = () => {
           </button>
           <button
             className={
-              selectedCertificateNode === participation ? styles.selected : ''
+              selectedCertificateNode === participation ? styles.selected : ""
             }
-            onClick={() => onClick(participation, 'Participation')}
+            onClick={() => onClick(participation, "Participation")}
             type="button"
           >
             <img
@@ -135,9 +138,9 @@ const Certificates = () => {
         <Column colSm={2} colMd={2} colLg={3} className={styles.certificates}>
           <button
             className={
-              selectedCertificateNode === wellness ? styles.selected : ''
+              selectedCertificateNode === wellness ? styles.selected : ""
             }
-            onClick={() => onClick(wellness, 'Wellness')}
+            onClick={() => onClick(wellness, "Wellness")}
             type="button"
           >
             <img
@@ -146,6 +149,13 @@ const Certificates = () => {
               alt="wellness certificate"
               src={wellness}
             />
+          </button>
+          <button
+            className={selectedCertificateNode === grow ? styles.selected : ""}
+            onClick={() => onClick(grow, "Grow")}
+            type="button"
+          >
+            <img width="626" height="726" alt="grow certificate" src={grow} />
           </button>
         </Column>
       </Row>
@@ -159,7 +169,7 @@ const Certificates = () => {
             helperText="Click the personalized certificate to download and save"
             light
             labelText="Enter the student's name"
-            onChange={e => setName(e.target.value)}
+            onChange={(e) => setName(e.target.value)}
             type="text"
           />
           <canvas

@@ -26,6 +26,11 @@
   width: 100%;
 }
 
+// Header overflow scroll bug
+.container {
+  overflow-x: hidden;
+}
+
 // IBM Cookies link
 .truste_cookie_prefs a {
   font-family: "IBM Plex Sans VF", "Helvetica Neue", Arial, sans-serif !important;
