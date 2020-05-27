@@ -15,7 +15,7 @@ export const onRenderBody = ({ setPostBodyComponents }) => {
         ibm: {
           country: 'US',
           owner: 'Kristin Wisniewski',
-          developer: 'The Cleaner',
+          developer: 'Carbon',
           siteID: 'GLOBAL',
           subject: 'IBM000',
         }
