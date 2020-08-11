@@ -5,6 +5,7 @@ module.exports = {
       'A New Challenge for Teachers & Students. IBM has experience that can help',
     keywords: 'remote,learning,enablement,ibm',
   },
+  pathPrefix: `/remotelearning`,
   plugins: [
     {
       resolve: 'gatsby-plugin-manifest',
