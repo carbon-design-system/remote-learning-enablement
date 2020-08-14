@@ -24,7 +24,7 @@ const FirstRightText = () => (
     <br />
     <p>
       Support includes{' '}
-      <a href="/tools-and-resources/overview">tools and resources</a> to help
+      <a href="tools-and-resources/overview">tools and resources</a> to help
       make remote learning effective and guidance for your role in the school
       community.
     </p>
