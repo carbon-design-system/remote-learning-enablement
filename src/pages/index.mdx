@@ -1,3 +1,4 @@
+import { withPrefix } from 'gatsby';
 import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
 import HomepageTile from "../components/HomepageTile"
 export default HomepageTemplate;
@@ -31,7 +32,7 @@ export default HomepageTemplate;
     theme="teal"
     title="Tools and resources"
     actionIcon="arrowRight"
-    link="/tools-and-resources/overview"
+    link={withPrefix('/tools-and-resources/overview')}
     hoverColor="#004144"
     iconColor="light"
   />
@@ -57,7 +58,7 @@ export default HomepageTemplate;
       subtitle="Learn how these free tools and courses may help your class. "
       title="Free IBM Resources"
       identityIcon="pictograms/bee.svg"
-      link="/tools-and-resources/ibm-resources"
+      link={withPrefix('/tools-and-resources/ibm-resources')}
       hoverColor="#e0e0e0" //gray20
     />
 </Column>
