@@ -6,10 +6,10 @@
   "scripts": {
     "dev": "gatsby develop -H 0.0.0.0",
     "dev:clean": "yarn clean && yarn dev",
-    "build": "gatsby build --prefix-paths",
+    "build": "gatsby build --prefix-paths && mv public remotelearning && mkdir public && mv remotelearning public",
     "build:clean": "yarn clean && gatsby build --prefix-paths",
     "lint": "eslint . --fix",
-    "serve": "gatsby serve --prefix-paths",
+    "serve": "gatsby serve",
     "clean": "gatsby clean",
     "build:analyze": "ANALYZE=true yarn build"
   },
